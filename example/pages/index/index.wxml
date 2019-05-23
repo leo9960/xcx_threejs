@@ -1,0 +1,2 @@
+<!--index.wxml-->
+<canvas type="webgl" id="webgl" width="{{canvasWidth||(320*2)}}" height="{{canvasHeight||(504*2)}}" style='width:{{canvasStyleWidth||"320px"}};height:{{canvasStyleHeight||"504px"}};' bindtouchstart='onTouchStart' bindtouchmove='onTouchMove' bindtouchend='onTouchEnd'></canvas>
