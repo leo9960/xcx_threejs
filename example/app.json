@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/pano/pano",
     "pages/index/index"
   ],
   "window": {

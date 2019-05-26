@@ -1,0 +1,7 @@
+<!--pages/pano/pano.wxml-->
+<canvas type="webgl" id="webgl" width="{{canvasWidth||(320*2)}}" height="{{canvasHeight||(504*2)}}" style='width:{{canvasStyleWidth||"320px"}};height:{{canvasStyleHeight||"504px"}};' bindtouchstart='onTouchStart' bindtouchmove='onTouchMove' bindtouchend='onTouchEnd'></canvas>
+<cover-view style='position: absolute;bottom: 0;width:80%;padding:5px;height: 50px;display: block;background:rgba(255,255,255,0.5);font-size:12px;'>
+  <cover-view style='text-shadow:1px 1px 3px white;'>cameraP:{{camera.position.x}} {{camera.position.y}} {{camera.position.z}}</cover-view>
+  <cover-view style='text-shadow:1px 1px 3px white;'>cameraR:{{camera.rotation._x}} {{camera.rotation._y}} {{camera.rotation._z}}</cover-view>
+  <cover-view style='text-shadow:1px 1px 3px white;'>cameraFOV:{{camera.fov}} currentorientation:{{currentorientation||0}}</cover-view>
+</cover-view>
